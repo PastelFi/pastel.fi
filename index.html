@@ -2,8 +2,28 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
         <style type="text/css">
+            /*
             body {
                 background: #595959;
+            }
+            */
+            
+            body {
+                background: linear-gradient(-45deg, #5d5b6a, #758184, #39375b, #170a19, #595959);
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite;
+            }
+
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
             }
 
             #banner {
