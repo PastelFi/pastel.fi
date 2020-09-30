@@ -1,0 +1,24 @@
+{
+  "name": "pastel.fi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass scss/index.scss scss/dist/index.css -w",
+    "serve": "npm run scss & live-server --no-browser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PastelFi/pastel.fi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PastelFi/pastel.fi/issues"
+  },
+  "homepage": "https://github.com/PastelFi/pastel.fi#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1"
+  }
+}

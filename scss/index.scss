@@ -1,3 +1,6 @@
+$purple: #603B6D;
+$white: #fff;
+
 body {
     background: #272D4E;
     font-size: 18px;
@@ -19,19 +22,19 @@ main, footer {
 
 main {
     background: #E5E5E5;
-}
 
-main nav {
-    display: flex;
-}
+    nav {
+        display: flex;
 
-main nav a {
-    text-decoration: none;
-    color: #272D4E;
-}
+        a {
+            text-decoration: none;
+            color: #272D4E;
 
-main nav a + a {
-    margin-left: 2rem;
+            &:not(:first-child) {
+                margin-left: 2rem;
+            }
+        }
+    }
 }
 
 .landing {
@@ -43,51 +46,51 @@ main nav a + a {
     font-family: 'Comfortaa';
     font-weight: 400;
     font-size: 3.5rem;
-    color: #603B6D;
+    color: $purple;
 }
 
 .tagline {
     font-weight: 700;
     font-size: 5rem;
-    color: #603B6D;
+    color: $purple;
 }
 
 a.btn {
-    background: #603B6D;
+    background: $purple;
     border-radius: 60px;
     font-weight: 500;
     text-decoration: none;
-    color: #fff;
+    color: $white;
     padding: 1rem 7rem;
     text-align: center;
 }
 
 footer {
     background: #272D4E;
-    color: #fff;
+    color: $white;
     font-size: 14px;
     display: flex;
     justify-content: center;
     padding: 5rem 0;
-}
 
-footer .footer-menu {
-    display: flex;
-    flex-direction: column;
-}
+    .footer-menu-header {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
 
-footer .footer-menu:not(:first-child) {
-    margin-left: 10rem;
-}
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
 
-footer .footer-menu-header {
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-}
+        &:not(:first-child) {
+            margin-left: 10rem;
+        }
+    }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-    line-height: 1.8;
+    a {
+        color: $white;
+        text-decoration: none;
+        line-height: 1.8;
+    }
 }
