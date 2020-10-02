@@ -1,4 +1,13 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/utilities";
+
 $purple: #603B6D;
+$light-purple: #9F76E2;
 $white: #fff;
 
 body {
@@ -8,15 +17,39 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
-    width: 100%;
-    padding: 2%;
-    margin: 0 auto;
+h1 {
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 700;
+    color: $purple;
+}
+
+h2 {
+    font-size: 64px; // convert to rem
+    font-weight: 700;
+    color: $white;
+}
+
+h3 {
+    font-size: 55px; // convert to rem
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+
+    &.flex-center {
+        justify-content: center;
+    }
 }
 
 main, footer {
     width: 100%;
-    padding: 1%;
     margin: 0 auto;
 }
 
@@ -37,9 +70,18 @@ main {
     }
 }
 
+section {
+    padding: 2% 0;
+}
+
 .landing {
     text-align: center;
     margin-top: 5rem;
+}
+
+.features {
+    background: $purple;
+    color: $white;
 }
 
 .logo {
@@ -49,10 +91,12 @@ main {
     color: $purple;
 }
 
-.tagline {
-    font-weight: 700;
-    font-size: 5rem;
+.callout {
+    background: $white;
+    border-radius: 20px;
+    font-size: 26px; // convert to rem
     color: $purple;
+    padding: 2rem;
 }
 
 a.btn {
