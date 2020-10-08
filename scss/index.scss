@@ -10,11 +10,29 @@ $purple: #603B6D;
 $light-purple: #9F76E2;
 $white: #fff;
 
+html, body {
+    height: 100%;
+}
+
 body {
-    background: #272D4E;
+    display: flex;
+    flex-direction: column;
     font-size: 18px;
     line-height: 1.2;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: url(/assets/waves.png) no-repeat bottom;
+}
+
+.cover-container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 2rem 0 250px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
@@ -24,79 +42,11 @@ h1 {
     color: $purple;
 }
 
-h2 {
-    font-size: 64px; // convert to rem
-    font-weight: 700;
-    color: $white;
-}
-
-h3 {
-    font-size: 55px; // convert to rem
-    font-weight: 700;
-}
-
-h4 {
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.flex {
-    display: flex;
-
-    &.flex-center {
-        justify-content: center;
-    }
-}
-
-main, footer {
-    width: 100%;
-    margin: 0 auto;
-}
-
-main {
-    background: #E5E5E5;
-
-    nav {
-        display: flex;
-
-        a {
-            text-decoration: none;
-            color: #272D4E;
-
-            &:not(:first-child) {
-                margin-left: 2rem;
-            }
-        }
-    }
-}
-
-section {
-    padding: 2% 0;
-}
-
-.landing {
-    text-align: center;
-    margin-top: 5rem;
-}
-
-.features {
-    background: $purple;
-    color: $white;
-}
-
 .logo {
     font-family: 'Comfortaa';
     font-weight: 400;
     font-size: 3.5rem;
     color: $purple;
-}
-
-.callout {
-    background: $white;
-    border-radius: 20px;
-    font-size: 26px; // convert to rem
-    color: $purple;
-    padding: 2rem;
 }
 
 a.btn {
@@ -107,34 +57,4 @@ a.btn {
     color: $white;
     padding: 1rem 7rem;
     text-align: center;
-}
-
-footer {
-    background: #272D4E;
-    color: $white;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    padding: 5rem 0;
-
-    .footer-menu-header {
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-bottom: 1.5rem;
-    }
-
-    .footer-menu {
-        display: flex;
-        flex-direction: column;
-
-        &:not(:first-child) {
-            margin-left: 10rem;
-        }
-    }
-
-    a {
-        color: $white;
-        text-decoration: none;
-        line-height: 1.8;
-    }
 }

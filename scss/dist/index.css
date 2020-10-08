@@ -3378,11 +3378,27 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important; }
 
+html, body {
+  height: 100%; }
+
 body {
-  background: #272D4E;
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   line-height: 1.2;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background: url(/assets/waves.png) no-repeat bottom; }
+
+.cover-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 2rem 0 250px 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
 
 h1 {
   font-size: 5rem;
@@ -3390,61 +3406,11 @@ h1 {
   font-weight: 700;
   color: #603B6D; }
 
-h2 {
-  font-size: 64px;
-  font-weight: 700;
-  color: #fff; }
-
-h3 {
-  font-size: 55px;
-  font-weight: 700; }
-
-h4 {
-  font-size: 2rem;
-  font-weight: 700; }
-
-.flex {
-  display: flex; }
-  .flex.flex-center {
-    justify-content: center; }
-
-main, footer {
-  width: 100%;
-  margin: 0 auto; }
-
-main {
-  background: #E5E5E5; }
-  main nav {
-    display: flex; }
-    main nav a {
-      text-decoration: none;
-      color: #272D4E; }
-      main nav a:not(:first-child) {
-        margin-left: 2rem; }
-
-section {
-  padding: 2% 0; }
-
-.landing {
-  text-align: center;
-  margin-top: 5rem; }
-
-.features {
-  background: #603B6D;
-  color: #fff; }
-
 .logo {
   font-family: 'Comfortaa';
   font-weight: 400;
   font-size: 3.5rem;
   color: #603B6D; }
-
-.callout {
-  background: #fff;
-  border-radius: 20px;
-  font-size: 26px;
-  color: #603B6D;
-  padding: 2rem; }
 
 a.btn {
   background: #603B6D;
@@ -3454,24 +3420,3 @@ a.btn {
   color: #fff;
   padding: 1rem 7rem;
   text-align: center; }
-
-footer {
-  background: #272D4E;
-  color: #fff;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  padding: 5rem 0; }
-  footer .footer-menu-header {
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem; }
-  footer .footer-menu {
-    display: flex;
-    flex-direction: column; }
-    footer .footer-menu:not(:first-child) {
-      margin-left: 10rem; }
-  footer a {
-    color: #fff;
-    text-decoration: none;
-    line-height: 1.8; }
